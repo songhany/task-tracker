@@ -69,7 +69,7 @@ function App() {
 
     const res = await fetch(`http://localhost:5000/tasks/${id}`, {
       method: 'PUT',
-      header: {
+      headers: {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(updTask)
